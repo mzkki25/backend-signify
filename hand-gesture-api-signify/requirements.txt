@@ -7,3 +7,5 @@ firebase_admin==6.6.0
 Pillow==10.4.0
 python_multipart==0.0.19
 python-dotenv==0.21.0
+mediapipe==0.10.18
+opencv-python==4.10.0.84

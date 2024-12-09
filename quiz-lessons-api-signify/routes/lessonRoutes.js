@@ -9,7 +9,7 @@ const lessons = [
     title: 'Learn Basic A-F',
     subTitle: 'Beginner - 6 Lessons',
     photoUrl: 'https://storage.googleapis.com/another-file-deployment/assets/icon-material/1.png',
-    ytUrl: 'https://youtube.com/shorts/335_Zxhuo-Y?feature=shared',
+    ytUrl: 'https://storage.googleapis.com/another-file-deployment/assets/learn-video-material/A-F.mp4',
     completed: false, 
   },
   {
@@ -17,7 +17,7 @@ const lessons = [
     title: 'Learn Basic G-L',
     subTitle: 'Beginner - 6 Lessons',
     photoUrl: 'https://storage.googleapis.com/another-file-deployment/assets/icon-material/3.png',
-    ytUrl: 'https://youtu.be/5o5E_Q8wWvM?feature=shared',
+    ytUrl: 'https://storage.googleapis.com/another-file-deployment/assets/learn-video-material/G-L.mp4',
     completed: false
   },
   {
@@ -25,7 +25,7 @@ const lessons = [
     title: 'Learn Basic M-R',
     subTitle: 'Intermediete - 6 Lessons',
     photoUrl: 'https://storage.googleapis.com/another-file-deployment/assets/icon-material/6.png',
-    ytUrl: 'https://youtu.be/zauLekMGtvw?feature=shared',
+    ytUrl: 'https://storage.googleapis.com/another-file-deployment/assets/learn-video-material/M-R.mp4',
     completed: false
   },
   {
@@ -33,7 +33,7 @@ const lessons = [
     title: 'Learn Basic S-Z',
     subTitle: 'Advanced - 6 Lessons',
     photoUrl: 'https://storage.googleapis.com/another-file-deployment/assets/icon-material/8.png',
-    ytUrl: 'https://youtu.be/J5DrY2rVaeg?feature=shared',
+    ytUrl: 'https://storage.googleapis.com/another-file-deployment/assets/learn-video-material/S-Z.mp4',
     completed: false
   },
 ];

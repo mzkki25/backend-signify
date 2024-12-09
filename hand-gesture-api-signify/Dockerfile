@@ -2,7 +2,7 @@ FROM python:3.12
 
 ENV PYTHONUNBUFFERED=True
 
-RUN apt-get update && apt-get install -y libhdf5-dev
+RUN apt-get update && apt-get install -y libhdf5-dev && apt-get install -y libgl1-mesa-glx
 
 WORKDIR /code
 
