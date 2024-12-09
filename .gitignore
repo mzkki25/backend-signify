@@ -1,0 +1,12 @@
+hand-gesture-api-signify/__pycache__/
+hand-gesture-api-signify/credentials.json
+hand-gesture-api-signify/.env
+
+# Node modules
+quiz-lessons-api-signify/node_modules/
+
+#for npm users
+quiz-lessons-api-signify/package-lock.json
+
+# Environment
+quiz-lessons-api-signify/.env

@@ -1,0 +1,9 @@
+fastapi==0.115.6
+uvicorn==0.32.1
+tensorflow==2.18.0
+keras==3.6.0
+numpy==1.26.4
+firebase_admin==6.6.0
+Pillow==10.4.0
+python_multipart==0.0.19
+python-dotenv==0.21.0
