@@ -74,7 +74,7 @@ def predict_class(image_input, landmark_input):
 def read_image(file: bytes) -> Image.Image:
     try:
         pil_image = Image.open(BytesIO(file))
-        return pil_image
+        return cv2.cvtColor(np.array(pil_image), cv2.COLOR_RGB2BGR)
     except Exception as e:
         logger.error(f"Error reading image: {e}")
         raise e

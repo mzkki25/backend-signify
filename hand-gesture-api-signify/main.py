@@ -60,9 +60,6 @@ def upload_image_to_firebase(image_path):
     blob.make_public()
     return blob.public_url
 
-from PIL import Image
-import numpy as np
-
 def save_temp_image(image):
     """
     Menyimpan gambar ke file sementara.
@@ -77,6 +74,10 @@ def save_temp_image(image):
         return temp_file.name
     else:
         raise ValueError("Input image must be a PIL Image or numpy.ndarray")
+    
+@app.get("/")
+async def root():
+    return {"message": "Hand Gesture API Signify"}
 
 @app.post("/predict")
 async def predict_endpoint(file: UploadFile = File(...)):
