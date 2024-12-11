@@ -71,12 +71,21 @@ GET /users/:id - Get user details by ID
 ```
 
 ```bash
-Quiz
+Quizzes
 GET /quizzes - Get a list of all quizzes
 POST /quizzes - Add a new quiz
 GET /quizzes/:id - Get quiz details by ID
 PUT /quizzes/:id - Update a quiz by ID
 DELETE /quizzes/:id - Delete a quiz by ID
+```
+
+```bash
+Lessons
+GET /lessons - Get a list of all lessons
+POST /lessons - Add a new lesson
+GET /lessons/:id - Get lesson details by ID
+PUT /lessons/:id - Update a lesson by ID
+DELETE /lessons/:id - Delete a lesson by ID
 ```
 
 
