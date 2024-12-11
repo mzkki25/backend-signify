@@ -31,7 +31,7 @@ backend-signify/
 └── README.md
 ```
 
-# Quiz Lessons API Signify
+# Quizzes Lessons API Signify
 
 ## Prerequisites
 
