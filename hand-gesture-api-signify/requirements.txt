@@ -9,3 +9,4 @@ python_multipart==0.0.19
 python-dotenv==0.21.0
 mediapipe==0.10.18
 opencv-python==4.10.0.84
+google-generativeai==0.8.3

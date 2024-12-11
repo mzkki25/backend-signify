@@ -5,6 +5,7 @@ from firebase_admin import credentials, firestore, storage
 from predict import read_image, predict_gesture
 from PIL import Image
 
+import google.generativeai as gemini
 import os
 import datetime
 import uuid
@@ -78,6 +79,19 @@ def save_temp_image(image):
 @app.get("/")
 async def root():
     return {"message": "Hand Gesture API Signify"}
+
+@app.post("/autocorrect")
+async def autocorrect_endpoint(message: str):
+    try:
+        api_key = os.getenv("GEMINI_API_KEY")
+        gemini.configure(api_key=api_key)
+
+        chatbot = gemini.GenerativeModel("gemini-pro")
+        response = chatbot.generate_content(f"Revisi kesalahan penulisan ini: {message}")
+        return JSONResponse(content={"message": response.text})
+    except Exception as e:
+        logger.error(f"Unexpected error in autocorrect_endpoint: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Unexpected internal server error")
 
 @app.post("/predict")
 async def predict_endpoint(file: UploadFile = File(...)):
