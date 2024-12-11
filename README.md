@@ -95,7 +95,7 @@ Before using this API, make sure you have **Python** and **pip** installed on yo
     ```
 2. **Install the necessary dependencies**:
     ```bash
-    pip install -r requirements
+    pip install -r requirements.txt
     ```
 3. **Create an .env file and fill .env with:**
     ```bash
