@@ -137,6 +137,18 @@ async def predict_endpoint(file: UploadFile = File(...)):
     except Exception as e:
         logger.error(f"Unexpected error in predict_endpoint: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="Unexpected internal server error")
+    
+@app.get("/history")
+async def history():
+    try:
+        history = db.collection("predictions").order_by("timestamp").stream()
+        history_data = []
+        for doc in history:
+            history_data.append(doc.to_dict())
+        return JSONResponse(content=history_data)
+    except Exception as e:
+        logger.error(f"Unexpected error in history: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Unexpected internal server error")
 
 if __name__ == "__main__":
     import uvicorn
